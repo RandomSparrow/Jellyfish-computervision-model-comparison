@@ -1,0 +1,7 @@
+README.md
+setup.py
+ComputerVision.egg-info/PKG-INFO
+ComputerVision.egg-info/SOURCES.txt
+ComputerVision.egg-info/dependency_links.txt
+ComputerVision.egg-info/requires.txt
+ComputerVision.egg-info/top_level.txt
