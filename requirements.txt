@@ -1,0 +1,14 @@
+pathlib
+pytest-shutil
+pillow
+matplotlib
+tqdm
+pytest-timeit
+torchmetrics
+mlxtend
+scikit-learn
+torchvision
+torch
+torchinfo
+
+-e .
