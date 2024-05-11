@@ -66,6 +66,15 @@ class Split_data(Data_transform):
             logging.error("Error in preprocessing data {}".format(e))
             raise e
         
+    def targets(self):
+        try:    
+            img_train_target, img_test_target = train_test_split(self.data_folder().targets, test_size=0.2,random_state=42)
+            logging.info("Targets splited to train and test set")
+            return img_train_target, img_test_target
+        
+        except Exception as e:
+            logging.error("Error in preprocessing data {}".format(e))
+            raise e
 
 
 
