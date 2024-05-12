@@ -45,17 +45,18 @@ class CustomModelTrainer:
                     self._save_model()
                     best_epoch.append(epoch)
 
-        except Exception as e:
-            logging.error(f"An error occurred: {e}")
-
-        end_time = timer()
-        logging.info(f"""
-        [INFO] Total training time: {end_time-start_time:.3f} seconds
-               The Best predictions were made in epoch number {max(best_epoch)}:
+            end_time = timer()
+            logging.info(f"""
+                [INFO] Total training time: {end_time-start_time:.3f} seconds
+                The Best predictions were made in epoch number {max(best_epoch)}:
                   - Test loss: {test_losses[max(best_epoch)]:.5f}
                   - Accuracy: {accuracies[max(best_epoch)]*100:.2f}%""")
 
-        return train_losses, test_losses, accuracies, epoch_list
+            return train_losses, test_losses, accuracies, epoch_list        
+
+        except Exception as e:
+            logging.error(f"An error occurred: {e}")
+            raise e
 
     def _evaluate(self, loss_fn):
         test_loss, test_acc = 0, 0
@@ -68,8 +69,8 @@ class CustomModelTrainer:
                 test_loss += loss_fn(test_pred, b)
                 test_acc += accuracy_score(b.cpu(), (torch.softmax(test_pred, dim=1).argmax(dim=1)).cpu())
 
-        test_loss /= len(self.test_dataloader)
-        test_acc /= len(self.test_dataloader)
+            test_loss /= len(self.test_dataloader)
+            test_acc /= len(self.test_dataloader)
 
         return test_loss, test_acc
     
