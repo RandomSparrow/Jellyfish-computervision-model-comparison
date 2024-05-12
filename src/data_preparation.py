@@ -27,7 +27,7 @@ class Data_transform():
     def _transformation(self):
         trans =v2.Compose([
             v2.Resize((224,224)),
-            v2.ToTensor(),
+            v2.ToImage(),
             v2.ToDtype(torch.float32),
             v2.Normalize(mean=[0.485, 0.456, 0.406],std=[0.229, 0.224, 0.225])
             ])
@@ -53,7 +53,7 @@ class Split_data(Data_transform):
             logging.info("Train and test dataloaders created")
             return train_dataloader, test_dataloader
         except Exception as e:
-            logging.error("Error in preprocessing data {}".format(e))
+            logging.error("Error in preprocessing data into dataloaders {}".format(e))
             raise e
     
     def _train_test_split(self):
@@ -63,7 +63,7 @@ class Split_data(Data_transform):
             return img_train, img_test
         
         except Exception as e:
-            logging.error("Error in preprocessing data {}".format(e))
+            logging.error("Error in preprocessing data into train and test set {}".format(e))
             raise e
         
     def targets(self):
@@ -73,7 +73,7 @@ class Split_data(Data_transform):
             return img_train_target, img_test_target
         
         except Exception as e:
-            logging.error("Error in preprocessing data {}".format(e))
+            logging.error("Error in preprocessing data into targets {}".format(e))
             raise e
 
 

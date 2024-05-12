@@ -1,0 +1,211 @@
+[2024-05-13 00:29:09,130] 15 root - INFO - Model directory created
+[2024-05-13 00:29:09,130] 25 root - INFO - Model save path created
+[2024-05-13 00:29:09,136] 20 root - INFO - Data folder created
+[2024-05-13 00:29:10,611] 62 root - INFO - Data splited to train and test set
+[2024-05-13 00:29:10,611] 53 root - INFO - Train and test dataloaders created
+[2024-05-13 00:29:10,682] 31 root - INFO - Epoch: 0
+-------
+[2024-05-13 00:29:11,131] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:11,835] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:12,554] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:13,336] 42 root - INFO - 
+Train loss: 9.53971 | Test loss: 1.54838, Test acc: 36.98%
+
+[2024-05-13 00:29:13,353] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:29:13,353] 31 root - INFO - Epoch: 1
+-------
+[2024-05-13 00:29:13,360] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:14,079] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:14,801] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:15,573] 42 root - INFO - 
+Train loss: 1.02400 | Test loss: 1.23365, Test acc: 50.00%
+
+[2024-05-13 00:29:15,583] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:29:15,583] 31 root - INFO - Epoch: 2
+-------
+[2024-05-13 00:29:15,590] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:16,305] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:17,026] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:17,800] 42 root - INFO - 
+Train loss: 0.62583 | Test loss: 1.25406, Test acc: 52.08%
+
+[2024-05-13 00:29:17,801] 31 root - INFO - Epoch: 3
+-------
+[2024-05-13 00:29:17,808] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:18,523] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:19,241] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:20,013] 42 root - INFO - 
+Train loss: 0.38227 | Test loss: 1.17139, Test acc: 54.17%
+
+[2024-05-13 00:29:20,019] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:29:20,019] 31 root - INFO - Epoch: 4
+-------
+[2024-05-13 00:29:20,026] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:20,739] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:21,456] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:22,221] 42 root - INFO - 
+Train loss: 0.21488 | Test loss: 1.26128, Test acc: 56.25%
+
+[2024-05-13 00:29:22,222] 31 root - INFO - Epoch: 5
+-------
+[2024-05-13 00:29:22,229] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:22,944] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:23,660] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:24,433] 42 root - INFO - 
+Train loss: 0.12075 | Test loss: 1.29396, Test acc: 59.38%
+
+[2024-05-13 00:29:24,433] 31 root - INFO - Epoch: 6
+-------
+[2024-05-13 00:29:24,440] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:25,156] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:25,872] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:26,641] 42 root - INFO - 
+Train loss: 0.05612 | Test loss: 1.37540, Test acc: 57.81%
+
+[2024-05-13 00:29:26,641] 31 root - INFO - Epoch: 7
+-------
+[2024-05-13 00:29:26,649] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:27,364] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:28,080] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:28,852] 42 root - INFO - 
+Train loss: 0.03785 | Test loss: 1.47980, Test acc: 58.33%
+
+[2024-05-13 00:29:28,853] 31 root - INFO - Epoch: 8
+-------
+[2024-05-13 00:29:28,861] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:29,578] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:30,298] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:31,068] 42 root - INFO - 
+Train loss: 0.02786 | Test loss: 1.46802, Test acc: 58.85%
+
+[2024-05-13 00:29:31,068] 31 root - INFO - Epoch: 9
+-------
+[2024-05-13 00:29:31,075] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:31,791] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:32,508] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:33,278] 42 root - INFO - 
+Train loss: 0.05620 | Test loss: 1.67237, Test acc: 54.17%
+
+[2024-05-13 00:29:33,279] 49 root - INFO - 
+                [INFO] Total training time: 22.598 seconds
+                The Best predictions were made in epoch number 3:
+                  - Test loss: 1.17139
+                  - Accuracy: 54.17%
+[2024-05-13 00:29:33,284] 20 root - INFO - Data folder created
+[2024-05-13 00:29:33,285] 72 root - INFO - Targets splited to train and test set
+[2024-05-13 00:29:33,294] 20 root - INFO - Data folder created
+[2024-05-13 00:29:33,695] 38 root - INFO - Plot created
+[2024-05-13 00:29:33,884] 73 root - INFO - Predictions created
+[2024-05-13 00:29:34,254] 56 root - INFO - Confusion matrix created
+[2024-05-13 00:29:34,261] 15 root - INFO - Model directory created
+[2024-05-13 00:29:34,261] 25 root - INFO - Model save path created
+[2024-05-13 00:29:34,266] 20 root - INFO - Data folder created
+[2024-05-13 00:29:35,817] 62 root - INFO - Data splited to train and test set
+[2024-05-13 00:29:35,818] 53 root - INFO - Train and test dataloaders created
+[2024-05-13 00:29:36,335] 55 root - INFO - Model succesfully imported
+[2024-05-13 00:29:36,401] 31 root - INFO - Epoch: 0
+-------
+[2024-05-13 00:29:37,031] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:40,170] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:43,421] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:46,705] 42 root - INFO - 
+Train loss: 1.20078 | Test loss: 0.51021, Test acc: 93.75%
+
+[2024-05-13 00:29:46,851] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:29:46,852] 31 root - INFO - Epoch: 1
+-------
+[2024-05-13 00:29:46,947] 92 root - INFO - Samples 0/720
+[2024-05-13 00:29:50,196] 92 root - INFO - Samples 256/720
+[2024-05-13 00:29:53,436] 92 root - INFO - Samples 512/720
+[2024-05-13 00:29:56,620] 42 root - INFO - 
+Train loss: 0.27082 | Test loss: 0.08255, Test acc: 98.96%
+
+[2024-05-13 00:29:56,779] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:29:56,779] 31 root - INFO - Epoch: 2
+-------
+[2024-05-13 00:29:56,885] 92 root - INFO - Samples 0/720
+[2024-05-13 00:30:00,111] 92 root - INFO - Samples 256/720
+[2024-05-13 00:30:03,364] 92 root - INFO - Samples 512/720
+[2024-05-13 00:30:06,563] 42 root - INFO - 
+Train loss: 0.09022 | Test loss: 0.02698, Test acc: 100.00%
+
+[2024-05-13 00:30:06,725] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:30:06,725] 31 root - INFO - Epoch: 3
+-------
+[2024-05-13 00:30:06,817] 92 root - INFO - Samples 0/720
+[2024-05-13 00:30:10,071] 92 root - INFO - Samples 256/720
+[2024-05-13 00:30:13,330] 92 root - INFO - Samples 512/720
+[2024-05-13 00:30:16,524] 42 root - INFO - 
+Train loss: 0.04618 | Test loss: 0.01940, Test acc: 99.48%
+
+[2024-05-13 00:30:16,524] 31 root - INFO - Epoch: 4
+-------
+[2024-05-13 00:30:16,630] 92 root - INFO - Samples 0/720
+[2024-05-13 00:30:19,870] 92 root - INFO - Samples 256/720
+[2024-05-13 00:30:23,122] 92 root - INFO - Samples 512/720
+[2024-05-13 00:30:26,320] 42 root - INFO - 
+Train loss: 0.02550 | Test loss: 0.00704, Test acc: 100.00%
+
+[2024-05-13 00:30:26,476] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:30:26,477] 31 root - INFO - Epoch: 5
+-------
+[2024-05-13 00:30:26,578] 92 root - INFO - Samples 0/720
+[2024-05-13 00:30:29,822] 92 root - INFO - Samples 256/720
+[2024-05-13 00:30:33,085] 92 root - INFO - Samples 512/720
+[2024-05-13 00:30:36,285] 42 root - INFO - 
+Train loss: 0.03554 | Test loss: 0.01312, Test acc: 100.00%
+
+[2024-05-13 00:30:36,286] 31 root - INFO - Epoch: 6
+-------
+[2024-05-13 00:30:36,389] 92 root - INFO - Samples 0/720
+[2024-05-13 00:30:39,638] 92 root - INFO - Samples 256/720
+[2024-05-13 00:30:42,892] 92 root - INFO - Samples 512/720
+[2024-05-13 00:30:46,108] 42 root - INFO - 
+Train loss: 0.03385 | Test loss: 0.01190, Test acc: 100.00%
+
+[2024-05-13 00:30:46,109] 31 root - INFO - Epoch: 7
+-------
+[2024-05-13 00:30:46,201] 92 root - INFO - Samples 0/720
+[2024-05-13 00:30:49,462] 92 root - INFO - Samples 256/720
+[2024-05-13 00:30:52,717] 92 root - INFO - Samples 512/720
+[2024-05-13 00:30:55,922] 42 root - INFO - 
+Train loss: 0.01965 | Test loss: 0.00450, Test acc: 100.00%
+
+[2024-05-13 00:30:56,084] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:30:56,084] 31 root - INFO - Epoch: 8
+-------
+[2024-05-13 00:30:56,178] 92 root - INFO - Samples 0/720
+[2024-05-13 00:30:59,438] 92 root - INFO - Samples 256/720
+[2024-05-13 00:31:02,703] 92 root - INFO - Samples 512/720
+[2024-05-13 00:31:05,901] 42 root - INFO - 
+Train loss: 0.01411 | Test loss: 0.00410, Test acc: 100.00%
+
+[2024-05-13 00:31:06,058] 99 root - INFO - Model's parameters saved
+
+[2024-05-13 00:31:06,058] 31 root - INFO - Epoch: 9
+-------
+[2024-05-13 00:31:06,156] 92 root - INFO - Samples 0/720
+[2024-05-13 00:31:09,413] 92 root - INFO - Samples 256/720
+[2024-05-13 00:31:12,683] 92 root - INFO - Samples 512/720
+[2024-05-13 00:31:15,888] 42 root - INFO - 
+Train loss: 0.01459 | Test loss: 0.01834, Test acc: 99.48%
+
+[2024-05-13 00:31:15,889] 49 root - INFO - 
+                [INFO] Total training time: 99.488 seconds
+                The Best predictions were made in epoch number 8:
+                  - Test loss: 0.00410
+                  - Accuracy: 100.00%
+[2024-05-13 00:31:15,896] 20 root - INFO - Data folder created
+[2024-05-13 00:31:15,896] 72 root - INFO - Targets splited to train and test set
+[2024-05-13 00:31:15,901] 20 root - INFO - Data folder created
+[2024-05-13 00:31:16,290] 38 root - INFO - Plot created
+[2024-05-13 00:31:17,095] 73 root - INFO - Predictions created
+[2024-05-13 00:31:17,368] 56 root - INFO - Confusion matrix created

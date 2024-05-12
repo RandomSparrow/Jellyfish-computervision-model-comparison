@@ -94,5 +94,9 @@ class CustomModelTrainer:
         return train_loss
 
     def _save_model(self):
-        torch.save(self.model.state_dict(), self.save_path)
-        logging.info("Model's parameters saved\n")       
+        try:
+            torch.save(self.model.state_dict(), self.save_path)
+            logging.info("Model's parameters saved\n")
+        except Exception as e:
+            logging.error(f"Saveing model failed: {e}")
+            raise e           

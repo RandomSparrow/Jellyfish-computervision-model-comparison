@@ -17,6 +17,7 @@ class Evaluation():
 
     def plots(self, train_losses, test_losses, accuracies, epoch_list):
         try:
+            plt.figure(figsize=(10, 10))
             plt.subplot(2,1,1)
             plt.title('Train-Test Loss')
             plt.plot(epoch_list, torch.tensor(train_losses), c="green", label='Train')
@@ -37,7 +38,7 @@ class Evaluation():
             logging.info("Plot created")
 
         except Exception as e:
-            logging.error("Error in preprocessing data {}".format(e))
+            logging.error("Error in creating evaluation plots {}".format(e))
             raise e
 
 
@@ -54,7 +55,7 @@ class Evaluation():
             plt.savefig(os.path.join(self.path, 'Confusion Matrix.png'))
             logging.info("Confusion matrix created")
         except Exception as e:
-            logging.error("Error in preprocessing data {}".format(e))
+            logging.error("Error in creating confusion matrix {}".format(e))
             raise e        
 
     def _load_predictions(self, model_path): 
@@ -73,7 +74,7 @@ class Evaluation():
             return y_predicted
         
         except Exception as e:
-            logging.error("Error in preprocessing data {}".format(e))
+            logging.error("Error in creating predictions {}".format(e))
             raise e
    
     

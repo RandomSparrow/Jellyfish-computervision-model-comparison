@@ -55,7 +55,7 @@ class Transfer_learning():
             logging.info("Model succesfully imported")
             return model
         except Exception as e:
-            logging.error("Error in preprocessing data {}".format(e))
+            logging.error("Error in importing model {}".format(e))
             raise e  
             
     
