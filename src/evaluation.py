@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import torch
+import os
 from torchmetrics import ConfusionMatrix
 from mlxtend.plotting import plot_confusion_matrix
 from logs.logger import logging
@@ -12,6 +13,7 @@ class Evaluation():
         self.device = device
         self.dataloader = dataloader
         self.targets = targets
+        
 
     def plots(self, train_losses, test_losses, accuracies, epoch_list):
         try:
@@ -31,7 +33,7 @@ class Evaluation():
             plt.ylabel('Accuracy')
             plt.tight_layout(w_pad=5, pad=2)
 
-            plt.show()
+            plt.savefig(os.path.join(self.path, 'Accuracy_plot.png'))
             logging.info("Plot created")
 
         except Exception as e:
@@ -39,25 +41,25 @@ class Evaluation():
             raise e
 
 
-    def confusion_matrix(self, classes):
+    def confusion_matrix(self, classes, model_path):
         try:
             matrix=ConfusionMatrix(num_classes=len(classes), task='multiclass')
-            matrix_tensor=matrix(preds=torch.cat(self._load_predictions()), target=torch.tensor(self.targets))
+            matrix_tensor=matrix(preds=torch.cat(self._load_predictions(model_path)), target=torch.tensor(self.targets))
 
             plot_confusion_matrix(
                 conf_mat=matrix_tensor.numpy(),
                 class_names=classes,
-                figsize=(5,5))
+                figsize=(15,15))
             plt.title('Confusion Matrix')
-            plt.show()
+            plt.savefig(os.path.join(self.path, 'Confusion Matrix.png'))
             logging.info("Confusion matrix created")
         except Exception as e:
             logging.error("Error in preprocessing data {}".format(e))
             raise e        
 
-    def _load_predictions(self): 
+    def _load_predictions(self, model_path): 
         try:    
-            self.model.load_state_dict(torch.load(self.path))
+            self.model.load_state_dict(torch.load(model_path))
             y_predicted=[]
             self.model.eval()
             with torch.inference_mode():

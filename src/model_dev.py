@@ -48,7 +48,7 @@ class TinyVGG_Jellyfish(nn.Module):
     
 class Transfer_learning():
 
-    def model(in_features: int, out_features: int, bias: bool):
+    def model(self, in_features: int, out_features: int, bias: bool):
         try:    
             model = models.efficientnet_v2_s(weights='DEFAULT')
             model.classifier = nn.Linear(in_features= in_features, out_features= out_features, bias=bias) 

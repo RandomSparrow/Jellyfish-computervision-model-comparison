@@ -1,8 +1,10 @@
 from pipeline import pipeline
 import torch
+import os
+
 device = torch.device("cuda" if torch.cuda.is_available else "cpu")
+data= os.path.join(os.getcwd(), "Data", "Jellyfish")
 
-data="C:\\Users\\Marcel\\Desktop\\Portfolio\\ComputerVision project\\Data\\Jellyfish"
-path="C:\\Users\\Marcel\\Desktop\\Portfolio\\ComputerVision project\\Trained_model\\TinyVGG_best"
-
-pipeline(data, path, device).TinyVGG_flow()
+if __name__ == '__main__':
+    pipeline(data, device).TinyVGG_flow()
+    pipeline(data, device).Transfer_learning_flow()
